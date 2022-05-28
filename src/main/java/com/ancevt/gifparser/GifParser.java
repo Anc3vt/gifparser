@@ -29,7 +29,7 @@ public class GifParser {
     public static void main(String[] args) throws IOException, GifException {
         final GifParser parser = new GifParser();
         final GifData result = parser.parse(
-                GifParser.class.getClassLoader().getResourceAsStream("giphy1.gif")
+                GifParser.class.getClassLoader().getResourceAsStream("gif0.gif")
         );
 
         System.out.println("Result: " + result);
@@ -95,6 +95,7 @@ public class GifParser {
         // TODO: implement here
 
         System.out.println(header);
+
 
         return null;
     }
